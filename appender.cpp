@@ -37,7 +37,7 @@ int main(int argc, char* argv[]) {
             if (line.empty()) continue;
             if (normalizeUrl(line) == normalizedNew) {
                 // Duplicate found in a meaningful way, do nothing and exit successfully
-                return 0; 
+                return 2; 
             }
         }
         fin.close();
